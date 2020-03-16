@@ -1,5 +1,6 @@
 package com.blueapple.viewpagerwithtablayout;
 
+import android.graphics.PorterDuff;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private TabLayout mTabLayout;
+
     private ViewPager mViewPager;
 
     @Override
@@ -39,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
             public void onTabSelected(TabLayout.Tab tab) {
 
                 mViewPager.setCurrentItem(tab.getPosition());
+
             }
 
             @Override
